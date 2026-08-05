@@ -10,21 +10,22 @@
 <body>
   <main class="game-shell">
     <header>
-      <p class="eyebrow">ONE BUTTON SURVIVAL</p>
+      <p class="eyebrow">RISK / REWARD SURVIVAL</p>
       <h1>NEON <em>ORBIT</em></h1>
       <div class="stats" aria-live="polite">
         <span>SCORE <b id="score">0000</b></span>
         <span>BEST <b id="best">0000</b></span>
+        <span>COMBO <b id="combo">x1</b></span>
       </div>
     </header>
     <section class="arena-wrap" aria-label="ゲーム画面">
       <canvas id="game" width="720" height="720"></canvas>
       <div class="overlay" id="overlay">
         <p class="status" id="status">TAP TO LAUNCH</p>
-        <p class="instruction" id="instruction">クリック / タップ / SPACE で軌道を切り替え</p>
+        <p class="instruction" id="instruction">同じ軌道のコアを回収 / GOLDはシールド</p>
       </div>
     </section>
-    <footer><span>SWITCH THE ORBIT</span><span>DON'T TOUCH THE STATIC</span></footer>
+    <footer><span>BLUE / PINK = DANGER</span><span>WHITE = SCORE · GOLD = SHIELD</span></footer>
   </main>
   <script src="game.js"></script>
 </body>
