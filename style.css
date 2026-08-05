@@ -14,5 +14,5 @@ canvas { display:block; width:100%; height:100%; cursor:pointer; touch-action:ma
 .overlay { position:absolute; inset:0; display:grid; place-content:center; gap:11px; pointer-events:none; transition:opacity .25s; background:radial-gradient(circle,transparent 20%,#02080c55); }
 .overlay.playing { opacity:0; }.status { margin:0; color:var(--cyan); font:700 clamp(21px,5vw,40px) Syne,sans-serif; letter-spacing:-.05em; text-shadow:0 0 18px var(--cyan); }.instruction { margin:0; font-size:10px; color:#bbd9e1; letter-spacing:.06em; }
 footer { display:flex; justify-content:space-between; margin-top:14px; color:#6d929d; font-size:9px; letter-spacing:.1em; animation:rise .7s .2s ease both; }
-@keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:0; transform:none; } }
+@keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
 @media (max-width:480px) { .game-shell { padding:22px 12px 13px; }.stats { margin:14px 0; } footer { font-size:7px; } }
